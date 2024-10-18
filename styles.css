@@ -22,7 +22,7 @@ html {
 .attribution a {
 	color: hsl(228, 45%, 44%);
 }
-
+/* Body foundations */
 body {
 	background-color: hsl(216, 12%, 8%);
 	font-family: 'Overpass', sans-serif;
@@ -54,6 +54,8 @@ body p {
 	height: auto;
 	border-radius: 5%;
 }
+
+/* Card content */
 
 .starIcon {
 	background-color: hsl(
@@ -136,6 +138,8 @@ button {
 button:hover {
 	background-color: hsl(0, 0%, 100%);
 }
+
+/* Thank you card */
 
 .thankYou {
 	display: none;
