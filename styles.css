@@ -9,12 +9,132 @@ html {
 	scroll-behavior: smooth;
 }
 
+/*Style for attribution from Frontend Mentor*/
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
+	position: absolute;
+	/* bottom: 0; */
+	width: 100%;
+	height: 1.5rem;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+body {
+	background-color: hsl(216, 12%, 8%);
+	font-family: 'Overpass', sans-serif;
+}
+
+body p {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: hsl(217, 12%, 63%);
+}
+
+.container {
+	display: flex;
+	background-color: hsl(216, 12%, 8%);
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	display: flex;
+	margin: 20rem;
+	padding: 1.6rem;
+	background-color: hsl(213, 19%, 18%);
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 35rem;
+	height: auto;
+	border-radius: 5%;
+}
+
+.starIcon {
+	background-color: hsl(
+		217,
+		12%,
+		63%,
+		0.1
+	); /* To make the background a bit transparent I added the "0.1" after the color code */
+	padding: 1rem;
+	margin-right: 82%;
+	margin-top: 2rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text {
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+	margin-right: auto;
+	margin-left: 1.3rem;
+}
+
+.text h1 {
+	color: hsl(0, 0%, 100%);
+	font-size: 3rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.ratingNums {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.rNums {
+	cursor: pointer;
+	font-size: 1.5rem;
+	color: hsl(217, 12%, 63%);
+	background-color: hsl(
+		217,
+		12%,
+		63%,
+		0.1
+	); /* To make the background a bit transparent I added the "0.1" after the color code */
+	margin: 1rem;
+	padding: 1rem;
+	height: 4.5rem;
+	width: 4.5rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rNums:hover {
+	background-color: hsl(25, 97%, 53%);
+	color: hsl(213, 19%, 18%);
+}
+
+button {
+	cursor: pointer;
+	background-color: hsl(25, 97%, 53%);
+	width: 94%;
+	height: 4rem;
+	padding: 1rem, 1rem, 1rem, 1rem;
+	border-radius: 10rem;
+	border-style: none;
+	margin-bottom: 2rem;
+	color: hsl(216, 12%, 8%);
+	font-family: 'Overpass', sans-serif;
+	font-size: 1.5rem;
+	letter-spacing: 0.1rem;
+}
+
+button:hover {
+	background-color: hsl(0, 0%, 100%);
 }
 
 .thankYou {
