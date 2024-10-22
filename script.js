@@ -1,15 +1,26 @@
-let clickClick = document.querySelectorAll('span.rNums');
+const clickClick = document.getElementsByClassName('rNums');
 
-clickClick.onclick = clickClickBoom();
+for (let i = 0; i < clickClick.length; i++) {
+	clickClick[i].addEventListener('click', clickClickBoom);
+}
+
+// The above for loop I use the .length function to go through the collection the getElementsByClassName makes.
 
 function clickClickBoom() {
+	const computedStyle = window.getComputedStyle(this);
+	const currentColor = computedStyle.color;
+
+	// console.log('Clicked element:', this);
+	// console.log('Computed color:', currentColor);
+
 	if (
-		clickClick.style.color == 'hsl(217, 12%, 63%, 0.1)' ||
-		'hsl(25, 97%, 53%)'
+		currentColor == 'rgb(145, 152, 160)' ||
+		currentColor == 'rgb(255, 87, 34)' ||
+		currentColor == 'rgb(37, 45, 55)'
 	) {
-		clickClick.style.backgroundColor = 'hsl(0, 0%, 100%)';
-		clickClick.style.color = 'hsl(213, 19%, 18%)';
+		this.style.backgroundColor = 'hsl(0, 0%, 100%)';
+		this.style.color = 'hsl(213, 19%, 18%)';
 	} else {
-		clickClick.style.color = 'hsl(213, 19%, 18%)';
+		this.style.color = 'hsl(213, 19%, 18%)';
 	}
 }
