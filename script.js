@@ -1,4 +1,4 @@
-const clickClick = document.getElementsByClassName('rNums');
+const clickClick = document.querySelectorAll('.rNums');
 
 for (let i = 0; i < clickClick.length; i++) {
 	clickClick[i].addEventListener('click', clickClickBoom);
@@ -12,6 +12,11 @@ function clickClickBoom() {
 
 	// console.log('Clicked element:', this);
 	// console.log('Computed color:', currentColor);
+
+	clickClick.forEach((button) => {
+		button.style.backgroundColor = '';
+		button.style.color = 'rgb(145, 152, 160)';
+	});
 
 	if (
 		currentColor == 'rgb(145, 152, 160)' ||
