@@ -14,7 +14,9 @@ html {
 .attribution {
 	font-size: 11px;
 	text-align: center;
-	position: absolute;
+	position: fixed;
+	left: 0;
+	bottom: 0;
 	/* bottom: 0; */
 	width: 100%;
 	height: 1.5rem;
@@ -42,7 +44,7 @@ body p {
 	justify-content: center;
 }
 
-.card {
+.rCard {
 	display: flex;
 	margin: 20rem;
 	padding: 1.6rem;
@@ -146,8 +148,49 @@ button:hover {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin: 20rem;
+	padding: 1.6rem;
+	background-color: hsl(213, 19%, 18%);
+	max-width: 35rem;
+	height: auto;
+	border-radius: 2.5rem;
 }
 
 .tyImg {
+	margin: 2rem;
+}
+
+.selected {
+	border-radius: 2.5rem;
+	color: hsl(25, 97%, 53%);
+	background-color: hsl(
+		217,
+		12%,
+		63%,
+		0.1
+	); /* To make the background a bit transparent I added the "0.1" after the color code */
+	padding: 0.8rem 1.5rem 0.5rem 1.5rem;
 	margin: 1rem;
+	font-size: 1.5rem;
+}
+
+.ty-text h1 {
+	color: hsl(0, 0%, 100%);
+	font-size: 3rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.ty-text {
+	text-align: center;
+	margin: 1rem 2rem 2rem 2rem;
+}
+
+@media screen {
+	.rCard {
+		min-width: 32rem;
+	}
+	.thankYou {
+		min-width: 32rem;
+	}
 }

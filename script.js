@@ -35,7 +35,7 @@ function clickClickBoom() {
 
 const submitButton = document.querySelector('.submit');
 const thankYouCard = document.querySelector('.thankYou');
-const ratingCard = document.querySelector('.card');
+const ratingCard = document.querySelector('.rCard');
 
 submitButton.addEventListener('click', thankYou);
 
